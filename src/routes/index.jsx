@@ -21,8 +21,6 @@ export default function Home() {
   return (
     <main>
       <Title>Hello World</Title>
-      <h1>Take care of the world that you want to reach</h1>
-
       <Show
         when={carbonData()}
         fallback={() => <span className=''>'Loading'</span>}
@@ -34,6 +32,44 @@ export default function Home() {
           />
         }
       </Show>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
+      <h1>Take care of the world</h1>
     </main>
   );
 }
