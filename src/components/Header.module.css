@@ -1,0 +1,18 @@
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  width: 130rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 50rem;
+  max-width: 90%;
+  float: right;
+}
