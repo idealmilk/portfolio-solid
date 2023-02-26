@@ -21,7 +21,7 @@ main {
   padding: 0;
 }
 
-main {
+html {
   background-color: #2675bb;
 }
 
@@ -82,6 +82,26 @@ li {
 
 strong {
   font-weight: 700;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 2.2rem;
+  background-color: #236299;
+  color: #000;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  transition: background-color 0.2s ease-in, opacity 0.2s ease-in;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #328ddd;
+  opacity: 1;
 }
 
 fieldset {

@@ -2,6 +2,7 @@ import { createSignal, createResource, createEffect } from 'solid-js';
 import { Title } from 'solid-start';
 
 import Carbon from '~/components/Carbon';
+import Hero from '~/components/Hero';
 
 const fetchCarbonData = async (url) =>
   (
@@ -32,44 +33,7 @@ export default function Home() {
           />
         }
       </Show>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
-      <h1>Take care of the world</h1>
+      <Hero />
     </main>
   );
 }

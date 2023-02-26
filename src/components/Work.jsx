@@ -1,11 +1,13 @@
 import { For, mergeProps } from 'solid-js';
 import { A } from 'solid-start';
 
+import styles from './Work.module.css';
+
 export default function Projects(props) {
   const merged = mergeProps({ projects: [] }, props);
 
   return (
-    <ul>
+    <ul class={styles.work}>
       <For each={merged.projects}>
         {(project, i) => {
           return (
