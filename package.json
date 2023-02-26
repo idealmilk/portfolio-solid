@@ -21,6 +21,7 @@
     "prettier": "^2.8.3",
     "solid-js": "^1.6.9",
     "solid-start": "^0.2.15",
+    "solid-start-netlify": "^0.1.0-alpha.37",
     "undici": "^5.15.1"
   },
   "prettier": {
