@@ -13,15 +13,12 @@
     "vite": "^3.2.5"
   },
   "dependencies": {
-    "@contentful/rich-text-html-renderer": "^16.0.2",
-    "@contentful/rich-text-types": "^16.0.2",
     "@solidjs/meta": "^0.28.2",
     "@solidjs/router": "^0.7.0",
-    "contentful": "^9.3.0",
     "prettier": "^2.8.3",
     "solid-js": "^1.6.9",
     "solid-start": "^0.2.15",
-    "solid-start-netlify": "^0.1.0-alpha.37",
+    "solid-start-netlify": "^0.1.8",
     "undici": "^5.15.1"
   },
   "prettier": {
