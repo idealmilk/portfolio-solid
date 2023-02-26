@@ -1,17 +1,20 @@
 import { Title } from 'solid-start';
 
-import styles from '~/components/Containers.module.css';
-
-export default function Home() {
+export default function About() {
   return (
     <main>
       <Title>About</Title>
-      <h1>About</h1>
-      <div class={styles.innerWrap}>
+      <div class='inner-text-wrap' style={{ 'margin-top': '15rem' }}>
         <p>
           Born in London. Living in Tokyo. Matthew is a web designer and
-          developer with a passion for helping brands get there message across
-          as eco-friendly as possible.
+          front-end developer with a passion for helping brands get their
+          message across online without damaging the environment.
+        </p>
+        <p>
+          Using lightweight frameworks, simple yet effective design and
+          real-time carbon data to limit the loading of page content during peak
+          times, Matthew can help your brand take care of the world that you
+          want to reach.
         </p>
       </div>
     </main>

@@ -1,10 +1,35 @@
 .works {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 90rem;
+  max-width: 90%;
+  margin: 15rem auto 10rem;
+}
+
+.works ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  grid-gap: 6rem;
+  margin-bottom: 5rem;
+}
+
+.works li {
+  list-style-type: none;
+}
+
+.works img {
+  border-radius: 1rem;
+  filter: sepia(100%) hue-rotate(210deg) brightness(0.3);
+  opacity: 0.8;
+  transition: filter 0.2s ease-in, opacity 0.2s ease-in;
+}
+
+.works img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.disclaimer {
+  width: 60%;
   margin: 0 auto;
   text-align: center;
-  text-transform: uppercase;
+  font-size: 1.6rem;
 }

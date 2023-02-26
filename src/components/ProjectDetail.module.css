@@ -1,0 +1,32 @@
+.projectDetailContainer h1 {
+  margin: 4rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+}
+
+.projectDetailWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectDetailInfo,
+.projectDetailDesc {
+  width: 50%;
+}
+
+.projectDetailInfo {
+  padding-right: 2.5rem;
+}
+
+.projectDetailKey {
+  text-transform: uppercase;
+}
+
+.projectDetailDesc {
+  padding-left: 2.5rem;
+}
+
+.projectDetailInfo td {
+  vertical-align: top;
+  padding: 0 2.5rem 2.5rem 0;
+}

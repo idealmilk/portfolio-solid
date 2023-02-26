@@ -1,6 +1,6 @@
 import { Title } from 'solid-start';
 
-export default function Home() {
+export default function Contact() {
   return (
     <main>
       <Title>Contact</Title>
