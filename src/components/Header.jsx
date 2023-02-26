@@ -1,14 +1,22 @@
 import { A } from 'solid-start';
 
+import Button from '~/components/Button';
+
 import styles from './Header.module.css';
 
 export default function Header() {
   return (
     <header class={styles.header}>
       <nav class={styles.nav}>
-        <A href='/'>Home</A>
-        <A href='/about'>About</A>
-        <A href='/work'>Work</A>
+        <A href='/'>
+          <Button>Home</Button>
+        </A>
+        <A href='/about'>
+          <Button>About</Button>
+        </A>
+        <A href='/work'>
+          <Button>Work</Button>
+        </A>
       </nav>
     </header>
   );

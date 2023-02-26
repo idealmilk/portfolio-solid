@@ -1,13 +1,9 @@
 .carbonContainer {
-  position: sticky;
-  bottom: 0;
+  position: fixed;
+  bottom: 1.6rem;
+  right: 1.6rem;
   display: flex;
   justify-content: space-between;
-  height: 4rem;
-  width: 4rem;
-  margin: 0 auto;
-  background: black;
-  color: white;
 }
 
 .carbon-wrapper {
