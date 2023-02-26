@@ -1,8 +1,5 @@
 [build]
-  publish = "dist/"
-
-[functions]
-  directory = "dist/functions"
+  publish = "netlify"
 
 [[redirects]]
   from = "/*"
