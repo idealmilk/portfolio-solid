@@ -11,12 +11,16 @@ import {
   Scripts,
   Title,
 } from 'solid-start';
+import { useLocation } from '@solidjs/router';
 
-import Header from '~/components/Header';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 import './root.css';
 
 export default function Root() {
+  const location = useLocation();
+
   return (
     <Html lang='en'>
       <Head>
@@ -31,6 +35,7 @@ export default function Root() {
             <Routes>
               <FileRoutes />
             </Routes>
+            {location.pathname !== '/' && <Footer />}
           </ErrorBoundary>
         </Suspense>
         <Scripts />

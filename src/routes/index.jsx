@@ -3,6 +3,7 @@ import { Title } from 'solid-start';
 
 import Carbon from '~/components/Carbon';
 import Hero from '~/components/Hero';
+import SEO from '~/components/SEO';
 
 const fetchCarbonData = async (url) =>
   (
@@ -21,7 +22,7 @@ export default function Home() {
 
   return (
     <main>
-      <Title>Hello World</Title>
+      <SEO />
       {/* <Show
         when={carbonData()}
         fallback={() => <span className=''>'Loading'</span>}

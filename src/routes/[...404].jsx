@@ -1,10 +1,11 @@
-import { Title } from 'solid-start';
 import { HttpStatusCode } from 'solid-start/server';
+
+import SEO from '~/components/SEO';
 
 export default function NotFound() {
   return (
     <main>
-      <Title>Not Found</Title>
+      <SEO title='Page Not Found' />
       <HttpStatusCode code={404} />
       <h1>Page Not Found</h1>
       <p>

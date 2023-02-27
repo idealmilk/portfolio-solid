@@ -1,9 +1,9 @@
-import { Title } from 'solid-start';
+import SEO from '~/components/SEO';
 
 export default function About() {
   return (
     <main>
-      <Title>About</Title>
+      <SEO title='About' />
       <div class='inner-text-wrap' style={{ 'margin-top': '15rem' }}>
         <p>
           Born in London. Living in Tokyo. Matthew is a web designer and

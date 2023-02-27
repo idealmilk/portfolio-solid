@@ -16,9 +16,19 @@ body,
 main {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 html {
@@ -124,14 +134,16 @@ img {
 }
 
 .inner-wrap,
-.inner-text-wrap {
+.inner-text-wrap,
+.mockup-wrap {
   width: 90rem;
   max-width: 90%;
   margin: 0 auto;
   padding: 4rem 0;
 }
 
-.inner-text-wrap {
+.inner-text-wrap,
+.mockup-wrap {
   background-color: #276aa5;
   border-radius: 1rem;
   padding: 4rem;
@@ -142,6 +154,16 @@ img {
 }
 
 .wide-img {
+  border-radius: 1rem;
+}
+
+.mockup-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mockup-wrap img {
+  width: 30%;
   border-radius: 1rem;
 }
 

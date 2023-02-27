@@ -1,12 +1,10 @@
-import { Title } from 'solid-start';
-
+import SEO from '~/components/SEO';
 import Work from '~/components/Work';
-import { Projects } from '~/data/Projects';
 
 export default function WorkPage() {
   return (
     <main>
-      <Title>Work</Title>
+      <SEO title='Work' />
 
       <Work />
     </main>

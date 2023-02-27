@@ -1,3 +1,7 @@
+.projectDetailContainer {
+  margin-bottom: 8rem;
+}
+
 .projectDetailTitle {
   position: relative;
   display: flex;

@@ -14,7 +14,7 @@ export default function Work(props) {
             return (
               <li>
                 <A href={`/work/${project.slug}`}>
-                  <img src={project.home} alt={project.clientName} />
+                  <img src={project.homeImage} alt={project.clientName} />
                   <p>{project.clientName}</p>
                 </A>
               </li>
