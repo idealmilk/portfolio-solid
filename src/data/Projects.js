@@ -2,6 +2,7 @@ export const Projects = [
   {
     clientName: 'NewEdge Studio',
     slug: 'new-edge-studio',
+    url: 'https://newedgestud.io',
     home: '/projects/new-edge-home.webp',
     year: '2023',
     team: ['Evan Oliver', 'Nic Reeves'],
@@ -12,6 +13,7 @@ export const Projects = [
   {
     clientName: 'The Glow',
     slug: 'the-glow',
+    url: 'https://theglow.jp',
     home: '/projects/the-glow-home.webp',
     year: '2022',
     category: ['Branding', 'UX/UI Design', 'Web Development'],
@@ -20,6 +22,7 @@ export const Projects = [
   {
     clientName: 'SciLeads',
     slug: 'scileads',
+    url: 'https://scileads.com',
     home: '/projects/scileads-home.webp',
     year: '2021',
     team: ['Cait Skinner'],
@@ -29,6 +32,7 @@ export const Projects = [
   {
     clientName: 'Second Life',
     slug: 'second-life',
+    url: 'https://secondlifefp.co.uk',
     home: '/projects/second-life-home.webp',
     year: '2022',
     category: ['UX/UI Design', 'Web Development'],

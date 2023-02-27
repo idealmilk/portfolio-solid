@@ -137,6 +137,10 @@ img {
   padding: 4rem;
 }
 
+.inner-text-wrap p {
+  margin-bottom: 2rem;
+}
+
 .wide-img {
   border-radius: 1rem;
 }

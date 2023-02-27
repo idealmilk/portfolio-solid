@@ -17,7 +17,7 @@
 
 .works img {
   border-radius: 1rem;
-  filter: sepia(100%) hue-rotate(210deg) brightness(0.3);
+  filter: grayscale(100%) brightness(0.3);
   opacity: 0.8;
   transition: filter 0.2s ease-in, opacity 0.2s ease-in;
 }

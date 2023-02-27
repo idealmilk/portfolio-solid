@@ -1,7 +1,17 @@
-.projectDetailContainer h1 {
+.projectDetailTitle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   margin: 4rem 0;
   padding-bottom: 1rem;
   border-bottom: 2px solid black;
+}
+
+.projectDetailTitle a {
+  position: absolute;
+  bottom: 2.2rem;
+  right: 0;
 }
 
 .projectDetailWrap {
