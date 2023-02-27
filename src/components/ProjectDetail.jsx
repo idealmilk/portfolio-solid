@@ -5,8 +5,6 @@ import styles from './ProjectDetail.module.css';
 export default function ProjectDetail(props) {
   const merged = mergeProps({ data: {} }, props);
 
-  console.log(merged.data.clientName);
-
   return (
     <div class={styles.projectDetailContainer}>
       <h1>{merged.data.clientName}</h1>
