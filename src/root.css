@@ -25,6 +25,10 @@ html {
   background-color: #2675bb;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 h1,
 h2,
 h3 {
@@ -103,7 +107,8 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover,
+a.active button {
   background-color: #328ddd;
   opacity: 1;
 }

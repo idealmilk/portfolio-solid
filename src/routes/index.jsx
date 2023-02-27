@@ -12,17 +12,17 @@ const fetchCarbonData = async (url) =>
   ).json();
 
 export default function Home() {
-  // const [slug, setSlug] = createSignal();
-  // const [carbonData] = createResource(slug, fetchCarbonData);
+  const [slug, setSlug] = createSignal();
+  const [carbonData] = createResource(slug, fetchCarbonData);
 
-  // createEffect(() => {
-  //   setSlug('https://www.wanikani.com/');
-  // });
+  createEffect(() => {
+    setSlug('https://www.wanikani.com/');
+  });
 
   return (
     <main>
       <Title>Hello World</Title>
-      {/* <Show
+      <Show
         when={carbonData()}
         fallback={() => <span className=''>'Loading'</span>}
       >
@@ -32,7 +32,7 @@ export default function Home() {
             fallback={<div>I am looking for it</div>}
           />
         }
-      </Show> */}
+      </Show>
       <Hero />
     </main>
   );
