@@ -1,35 +1,25 @@
-.header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: auto;
-  z-index: 668;
+.footer {
   display: block;
-  padding: 1.6rem 1.6rem 0;
-  justify-content: space-between;
-  align-items: flex-start;
+  width: 100%;
+  margin: 20rem 0 1.6rem;
+  text-align: center;
 }
 
-.nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  min-width: 100%;
-  padding-top: 0;
-  flex-direction: row;
-  justify-content: center;
+.footer p {
+  margin-bottom: 1rem;
 }
 
-.nav a {
-  margin-right: 1rem;
+.iconWrap a:first-of-type {
+  margin-right: 1.6rem;
 }
 
-.nav a:last-of-type {
-  margin-right: 0;
+.iconWrap button {
+  height: 4.4rem;
+  width: 4.4rem;
+  padding: 0;
 }
 
-.toggleWrap {
-  float: right;
+.iconWrap img {
+  width: 2.4rem;
+  transform: translate(-0.05rem, 0.3rem);
 }

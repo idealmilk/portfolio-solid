@@ -29,6 +29,7 @@ export function CarbonIntensityProvider(props) {
     store = [carbonIntensity, setCarbonIntensity];
 
   const [fetchedCarbonIntensity] = createResource(fetchCarbonIntensity);
+
   createEffect(() => {
     if (!fetchedCarbonIntensity.loading) {
       setCarbonIntensity(fetchedCarbonIntensity().data.data[0].intensity);
