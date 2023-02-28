@@ -15,6 +15,7 @@ import { useLocation } from '@solidjs/router';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import MobileNav from './components/MobileNav';
 
 import './root.css';
 
@@ -32,6 +33,7 @@ export default function Root() {
         <Suspense>
           <ErrorBoundary>
             <Header />
+            <MobileNav />
             <Routes>
               <FileRoutes />
             </Routes>
