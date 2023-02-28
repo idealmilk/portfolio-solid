@@ -44,3 +44,18 @@
   vertical-align: top;
   padding: 0 2.5rem 2.5rem 0;
 }
+
+@media (max-width: 768px) {
+  .projectDetailWrap {
+    display: block;
+  }
+
+  .projectDetailInfo,
+  .projectDetailDesc {
+    width: 100%;
+  }
+
+  .projectDetailDesc {
+    padding-left: 0;
+  }
+}

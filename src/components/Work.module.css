@@ -33,3 +33,22 @@
   text-align: center;
   font-size: 1.6rem;
 }
+
+@media (max-width: 768px) and (hover: none) {
+  .works img:hover {
+    opacity: 0.8;
+    transition: filter 0.2s ease-in, opacity 0.2s ease-in;
+  }
+}
+
+@media (max-width: 480px) {
+  .works ul {
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+    grid-gap: 4rem;
+  }
+
+  .disclaimer {
+    width: 90%;
+    font-size: 1.4rem;
+  }
+}

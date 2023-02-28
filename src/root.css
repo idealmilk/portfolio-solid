@@ -118,6 +118,7 @@ button {
 }
 
 button:hover,
+button.hover,
 a.active button {
   background-color: #328ddd;
   opacity: 1;
@@ -168,6 +169,21 @@ img {
   border-radius: 1rem;
 }
 
+@media (max-width: 768px) and (hover: none) {
+  button:hover {
+    background: rgba(35, 98, 153, 0.6);
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    padding: 1rem 1.6rem;
+    border-radius: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+}
+
 @media (min-width: 480px) {
   h1 {
     max-width: none;
@@ -175,5 +191,14 @@ img {
 
   p {
     max-width: none;
+  }
+}
+
+@media (max-width: 320px) {
+  button {
+    padding: 0.8rem 1.4rem;
+    border-radius: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
   }
 }

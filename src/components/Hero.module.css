@@ -10,6 +10,7 @@
 
 .heroWrap h1 {
   font-size: 12rem;
+  margin-bottom: 2rem;
 }
 
 .heroWrap {
@@ -19,4 +20,25 @@
 
 .heroButtonWrap button:first-of-type {
   margin-right: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .heroWrap h1 {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroButtonWrap {
+    display: block;
+  }
+
+  .heroButtonWrap a {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .heroButtonWrap button:first-of-type {
+    margin-right: 0;
+  }
 }
