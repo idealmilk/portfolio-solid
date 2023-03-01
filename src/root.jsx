@@ -1,5 +1,5 @@
 // @refresh reload
-import { Suspense, createSignal, createResource, createEffect } from 'solid-js';
+import { Suspense, createSignal, onMount, createEffect } from 'solid-js';
 import {
   Body,
   ErrorBoundary,
@@ -20,9 +20,25 @@ import MobileNav from './components/MobileNav';
 import './root.css';
 
 export const [isEnglish, setIsEnglish] = createSignal(true, { equals: false });
+export const [carbonIntensity, setCarbonIntensity] = createSignal([]);
 
 export default function Root() {
   const location = useLocation();
+
+  onMount(async () => {
+    const now = new Date();
+
+    const eightHoursAhead = new Date(
+      new Date().setTime(now.getTime() + 16 * 60 * 60 * 1000)
+    );
+
+    const response = await fetch(
+      `https://api.carbonintensity.org.uk/regional/intensity/${now.toISOString()}/${eightHoursAhead.toISOString()}/regionid/13`
+    );
+    const data = await response.json();
+
+    setCarbonIntensity(data.data.data[0].intensity);
+  });
 
   return (
     <Html lang='en'>
