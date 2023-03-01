@@ -42,7 +42,12 @@ export default function ProjectDetail(props) {
                   </Show>
                 </td>
                 <td>
-                  <p>{merged.data.year}</p>
+                  <Show
+                    when={isEnglish()}
+                    fallback={<p>{merged.data.year}年</p>}
+                  >
+                    <p>{merged.data.year}</p>
+                  </Show>
                 </td>
               </tr>
               {merged.data.team && (
@@ -65,7 +70,9 @@ export default function ProjectDetail(props) {
           </table>
         </div>
         <div class={styles.projectDetailDesc}>
-          <p>{merged.data.desc}</p>
+          <Show when={isEnglish()} fallback={<p>{merged.data.jpDesc}</p>}>
+            <p>{merged.data.desc}</p>
+          </Show>
         </div>
       </div>
     </div>
