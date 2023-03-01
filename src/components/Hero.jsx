@@ -5,6 +5,14 @@ import { isEnglish, setIsEnglish } from '~/root';
 
 import styles from './Hero.module.css';
 
+const indexTranslations = {
+  'very low': '非常に低い',
+  low: '低い',
+  moderate: '中程度',
+  high: '高い',
+  'very high': '非常に高い',
+};
+
 export default function Hero() {
   return (
     <div class={styles.hero}>
