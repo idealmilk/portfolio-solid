@@ -13,6 +13,7 @@ import {
 } from 'solid-start';
 import { useLocation } from '@solidjs/router';
 
+import Carbon from './components/Carbon';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MobileNav from './components/MobileNav';
@@ -47,7 +48,9 @@ export default function Root() {
     const carbonUsageData = await carbonUsageResponse.json();
 
     setCarbonIntensity(carbonIntensityData.data.data[0].intensity);
-    setCarbonUsage(carbonUsageData.statistics.co2.grid.grams);
+    setCarbonUsage(
+      parseFloat(carbonUsageData.statistics.co2.grid.grams.toFixed(3))
+    );
   });
 
   return (
@@ -66,6 +69,7 @@ export default function Root() {
               <FileRoutes />
             </Routes>
             {location.pathname !== '/' && <Footer />}
+            <Carbon />
           </ErrorBoundary>
         </Suspense>
         <Scripts />
