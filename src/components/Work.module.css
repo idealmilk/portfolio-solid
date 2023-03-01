@@ -4,11 +4,25 @@
   margin: 15rem auto 10rem;
 }
 
-.works ul {
+.works .lowIntensityList,
+.works .highIntensityList {
+  margin-bottom: 5rem;
+}
+
+.works .lowIntensityList {
   display: grid;
   grid-template-columns: repeat(2, minmax(0px, 1fr));
   grid-gap: 6rem;
   margin-bottom: 5rem;
+}
+
+.works .highIntensityList li {
+  padding: 1.4rem;
+  border-bottom: 2px solid black;
+}
+
+.works .highIntensityList li p {
+  font-size: 3vw;
 }
 
 .works li {
@@ -42,7 +56,7 @@
 }
 
 @media (max-width: 480px) {
-  .works ul {
+  .works .lowIntensityList {
     grid-template-columns: repeat(1, minmax(0px, 1fr));
     grid-gap: 4rem;
   }

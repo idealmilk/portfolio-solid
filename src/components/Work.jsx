@@ -3,27 +3,56 @@ import { A } from 'solid-start';
 
 import { Projects } from '~/data/Projects';
 import { isEnglish, setIsEnglish } from '~/root';
+import { carbonIntensity, setCarbonIntensity } from '~/root';
 
 import styles from './Work.module.css';
+
+function LowIntensityList() {
+  return (
+    <ul class={styles.lowIntensityList}>
+      <For each={Projects}>
+        {(project, i) => {
+          return (
+            <li>
+              <A href={`/work/${project.slug}`}>
+                <img src={project.homeImage} alt={project.clientName} />
+                <p>{project.clientName}</p>
+              </A>
+            </li>
+          );
+        }}
+      </For>
+    </ul>
+  );
+}
+
+function HighIntensityList() {
+  return (
+    <ul class={styles.highIntensityList}>
+      <For each={Projects}>
+        {(project, i) => {
+          return (
+            <li>
+              <A href={`/work/${project.slug}`}>
+                <p>{project.clientName}</p>
+              </A>
+            </li>
+          );
+        }}
+      </For>
+    </ul>
+  );
+}
 
 export default function Work(props) {
   return (
     <div class={styles.works}>
-      <p>{isEnglish().toString()}</p>
-      <ul>
-        <For each={Projects}>
-          {(project, i) => {
-            return (
-              <li>
-                <A href={`/work/${project.slug}`}>
-                  <img src={project.homeImage} alt={project.clientName} />
-                  <p>{project.clientName}</p>
-                </A>
-              </li>
-            );
-          }}
-        </For>
-      </ul>
+      <Show
+        when={carbonIntensity().forecast < 200}
+        fallback={<HighIntensityList />}
+      >
+        <LowIntensityList />
+      </Show>
       <Show
         when={isEnglish()}
         fallback={
