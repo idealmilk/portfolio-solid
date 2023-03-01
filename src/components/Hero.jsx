@@ -2,7 +2,6 @@ import { A } from 'solid-start';
 import { createSignal, Show } from 'solid-js';
 
 import { isEnglish, setIsEnglish } from '~/root';
-import { carbonIntensity, setCarbonIntensity } from '~/root';
 
 import styles from './Hero.module.css';
 
@@ -28,8 +27,6 @@ export default function Hero() {
             </Show>
           </A>
         </div>
-        <p>Carbon Intensity: {carbonIntensity().index}</p>
-        <p>Carbon Forecast: {carbonIntensity().forecast}g CO2/kWh</p>
       </div>
     </div>
   );
