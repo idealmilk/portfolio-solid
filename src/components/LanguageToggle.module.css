@@ -36,12 +36,12 @@ a.active .languageToggle {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
-  height: 4.4rem;
-  width: 4.4rem;
-  background-color: #328ddd;
+  z-index: -1 !important;
+  height: 4.4rem !important;
+  width: 4.4rem !important;
+  background-color: #328ddd !important;
   transition: transform 0.2s ease-in;
-  border-radius: 50%;
+  border-radius: 50% !important;
 }
 
 .switchOn {

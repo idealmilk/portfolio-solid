@@ -17,7 +17,7 @@ export default function Header() {
           <button>Work</button>
         </A>
       </nav>
-      <div className={styles.toggleWrap}>
+      <div class={styles.toggleWrap}>
         <LanguageToggle />
       </div>
     </header>

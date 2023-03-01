@@ -7,7 +7,7 @@ export default function ProjectDetail(props) {
 
   return (
     <div class={styles.projectDetailContainer}>
-      <div className={styles.projectDetailTitle}>
+      <div class={styles.projectDetailTitle}>
         <h1>{merged.data.clientName}</h1>
         <a href={merged.data.url} target='_blank' rel='noopener noreferrer'>
           <button>Visit Site</button>

@@ -2,6 +2,7 @@ import { createSignal, createEffect } from 'solid-js';
 import { A } from 'solid-start';
 
 import Footer from './Footer';
+import LanguageToggle from './LanguageToggle';
 
 import styles from './MobileNav.module.css';
 
@@ -40,6 +41,14 @@ export default function MobileNav() {
               Work
             </A>
           </li>
+
+          <div
+            style='
+    text-align: center;
+    margin-top: 4rem;'
+          >
+            <LanguageToggle />
+          </div>
           <Footer />
         </ul>
       </div>

@@ -5,7 +5,6 @@ import { isEnglish, setIsEnglish } from '~/root';
 import styles from './LanguageToggle.module.css';
 
 export default function LanguageToggle() {
-  console.log(isEnglish());
   return (
     <button
       onClick={() => setIsEnglish(!isEnglish())}

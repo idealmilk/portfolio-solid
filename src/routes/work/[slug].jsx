@@ -30,7 +30,7 @@ export default function WorkTemplate() {
         </For>
       </div>
 
-      <div className='mockup-wrap'>
+      <div class='mockup-wrap'>
         <For each={project.mobileImages}>
           {(image, i) => {
             return (
