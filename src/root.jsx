@@ -1,5 +1,5 @@
 // @refresh reload
-import { Suspense } from 'solid-js';
+import { Suspense, createSignal, createResource, createEffect } from 'solid-js';
 import {
   Body,
   ErrorBoundary,
@@ -18,6 +18,8 @@ import Footer from './components/Footer';
 import MobileNav from './components/MobileNav';
 
 import './root.css';
+
+export const [isEnglish, setIsEnglish] = createSignal(true, { equals: false });
 
 export default function Root() {
   const location = useLocation();

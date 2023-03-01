@@ -5,21 +5,7 @@ import Carbon from '~/components/Carbon';
 import Hero from '~/components/Hero';
 import SEO from '~/components/SEO';
 
-const fetchCarbonData = async (url) =>
-  (
-    await fetch(`https://api.websitecarbon.com/site?url=${url}`, {
-      mode: 'cors',
-    })
-  ).json();
-
 export default function Home() {
-  // const [slug, setSlug] = createSignal();
-  // const [carbonData] = createResource(slug, fetchCarbonData);
-
-  // createEffect(() => {
-  //   setSlug('https://www.wanikani.com/');
-  // });
-
   return (
     <main>
       <SEO />

@@ -1,5 +1,7 @@
 import SEO from '~/components/SEO';
 
+import { isEnglish, setIsEnglish } from '~/root';
+
 export default function About() {
   return (
     <main>

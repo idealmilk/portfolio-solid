@@ -1,72 +1,53 @@
-.switch {
+.languageToggle {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   margin: 0;
-}
-
-.switch > span {
-  position: absolute;
-  top: 0.8rem;
-  pointer-events: none;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-  width: 50%;
-  text-align: center;
-}
-
-.switch > span.switchOn {
-  left: 0;
-  color: #000000;
-}
-
-.switch > span.switchOff {
-  right: 0;
-  color: #000000;
-}
-
-.checkToggle {
-  position: absolute;
-  margin-left: -9999px;
-  visibility: hidden;
-}
-.checkToggle + label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  user-select: none;
-}
-
-input.checkToggleRoundFlat + label {
+  padding: 0;
   width: 8.8rem;
   height: 4.4rem;
-  background: rgba(35, 98, 153, 0.6);
   border-radius: 60px;
+  transition: none;
+  cursor: pointer;
+  z-index: 1000;
 }
-input.checkToggleRoundFlat + label:before,
-input.checkToggleRoundFlat + label:after {
-  display: block;
+
+.languageToggle:hover,
+.languageToggle.hover,
+a.active .languageToggle {
+  background-color: rgba(35, 98, 153, 0.6);
+}
+
+.english,
+.japanese {
   position: absolute;
-  content: '';
+  top: 0.7rem;
 }
 
-input.checkToggleRoundFlat + label:before {
-  background: rgba(35, 98, 153, 0.6);
-  border-radius: 60px;
+.english {
+  left: 0.8rem;
 }
 
-input.checkToggleRoundFlat + label:after {
-  width: 4.4rem;
+.japanese {
+  right: 1rem;
+}
+
+.switchOn,
+.switchOff {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
   height: 4.4rem;
+  width: 4.4rem;
   background-color: #328ddd;
-  border-radius: 52px;
-  transition: margin 0.2s;
+  transition: transform 0.2s ease-in;
+  border-radius: 50%;
 }
 
-input.checkToggleRoundFlat:checked + label {
+.switchOn {
+  transform: translateX(0);
 }
 
-input.checkToggleRoundFlat:checked + label:after {
-  margin-left: 44px;
+.switchOff {
+  transform: translateX(4.4rem);
 }

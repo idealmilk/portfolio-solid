@@ -1,11 +1,16 @@
 import { A } from 'solid-start';
 
+import { isEnglish, setIsEnglish } from '~/root';
+
 import styles from './Footer.module.css';
 
 export default function Footer() {
   return (
     <footer class={styles.footer}>
-      <p>Connect with me</p>
+      <Show when={isEnglish()} fallback={<p>僕とつながる</p>}>
+        <p>Connect with me</p>
+      </Show>
+
       <div class={styles.iconWrap}>
         <a
           href='https://www.linkedin.com/in/matthew-gilligan-dev/'
