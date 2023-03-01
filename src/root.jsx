@@ -21,6 +21,7 @@ import './root.css';
 
 export const [isEnglish, setIsEnglish] = createSignal(true, { equals: false });
 export const [carbonIntensity, setCarbonIntensity] = createSignal([]);
+export const [carbonUsage, setCarbonUsage] = createSignal([]);
 
 export default function Root() {
   const location = useLocation();
@@ -32,12 +33,21 @@ export default function Root() {
       new Date().setTime(now.getTime() + 16 * 60 * 60 * 1000)
     );
 
-    const response = await fetch(
+    const carbonIntensityResponse = await fetch(
       `https://api.carbonintensity.org.uk/regional/intensity/${now.toISOString()}/${eightHoursAhead.toISOString()}/regionid/13`
     );
-    const data = await response.json();
+    const carbonIntensityData = await carbonIntensityResponse.json();
 
-    setCarbonIntensity(data.data.data[0].intensity);
+    const carbonUsageResponse = await fetch(
+      `https://api.websitecarbon.com/site?url=https://trv608.netlify.app/`,
+      {
+        mode: 'cors',
+      }
+    );
+    const carbonUsageData = await carbonUsageResponse.json();
+
+    setCarbonIntensity(carbonIntensityData.data.data[0].intensity);
+    setCarbonUsage(carbonUsageData.statistics.co2.grid.grams);
   });
 
   return (
