@@ -1,5 +1,5 @@
 import { A } from 'solid-start';
-import { createSignal, Show } from 'solid-js';
+import { Show } from 'solid-js';
 
 import { isEnglish, setIsEnglish } from '~/root';
 

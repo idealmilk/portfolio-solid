@@ -2,6 +2,8 @@ import { mergeProps } from 'solid-js';
 
 import styles from './ProjectDetail.module.css';
 
+import { isEnglish, setIsEnglish } from '~/root';
+
 export default function ProjectDetail(props) {
   const merged = mergeProps({ data: {} }, props);
 
@@ -10,7 +12,9 @@ export default function ProjectDetail(props) {
       <div class={styles.projectDetailTitle}>
         <h1>{merged.data.clientName}</h1>
         <a href={merged.data.url} target='_blank' rel='noopener noreferrer'>
-          <button>Visit Site</button>
+          <Show when={isEnglish()} fallback={<button>サイト訪問</button>}>
+            <button>Visit Site</button>
+          </Show>
         </a>
       </div>
       <div class={styles.projectDetailWrap}>
@@ -19,7 +23,9 @@ export default function ProjectDetail(props) {
             <tbody>
               <tr>
                 <td class={styles.projectDetailKey}>
-                  <p>Category</p>
+                  <Show when={isEnglish()} fallback={<p>カテゴリー</p>}>
+                    <p>Category</p>
+                  </Show>
                 </td>
                 <td>
                   <ul>
@@ -31,7 +37,9 @@ export default function ProjectDetail(props) {
               </tr>
               <tr>
                 <td class={styles.projectDetailKey}>
-                  <p>Year</p>
+                  <Show when={isEnglish()} fallback={<p>年</p>}>
+                    <p>Year</p>
+                  </Show>
                 </td>
                 <td>
                   <p>{merged.data.year}</p>
@@ -40,7 +48,9 @@ export default function ProjectDetail(props) {
               {merged.data.team && (
                 <tr>
                   <td class={styles.projectDetailKey}>
-                    <p>Team</p>
+                    <Show when={isEnglish()} fallback={<p>チーム</p>}>
+                      <p>Team</p>
+                    </Show>
                   </td>
                   <td>
                     <ul>
