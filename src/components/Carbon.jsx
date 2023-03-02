@@ -18,6 +18,14 @@ export default function Carbon(props) {
   return (
     <>
       <div class={styles.intensityContainer}>
+        <div class={styles.gauge}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <Show
           when={isEnglish()}
           fallback={
