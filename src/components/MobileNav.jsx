@@ -9,49 +9,51 @@ import styles from './MobileNav.module.css';
 export default function MobileNav() {
   const [isActive, setIsActive] = createSignal(false);
 
-  const toggleActive = () => setIsActive(!isActive());
-
-  createEffect(() => {
-    const checkbox = document.getElementById('checkbox');
-    checkbox.checked = isActive();
-  });
+  const toggleNavigation = () => setIsActive(!isActive());
 
   return (
-    <nav role='navigation'>
-      <div class={styles.menuToggle}>
-        <input id='checkbox' type='checkbox' onClick={toggleActive} />
-
-        <span></span>
-        <span></span>
-        <span></span>
-
+    <>
+      <button
+        class={`${styles.toggle} ${isActive() ? styles.active : ''}`}
+        onClick={toggleNavigation}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+      <nav class={`${styles.navigation} ${isActive() ? styles.active : ''}`}>
         <ul>
           <li>
-            <A href='/' onClick={toggleActive} end>
+            <A href='/' onClick={toggleNavigation} end>
               Home
             </A>
           </li>
           <li>
-            <A href='/about' onClick={toggleActive} end>
+            <A href='/about' onClick={toggleNavigation} end>
               About
             </A>
           </li>
           <li>
-            <A href='/work' onClick={toggleActive} end>
+            <A href='/work' onClick={toggleNavigation} end>
               Work
             </A>
           </li>
+        </ul>
 
-          <div
-            style='
+        <div
+          style='
     text-align: center;
     margin-top: 4rem;'
-          >
-            <LanguageToggle />
-          </div>
-          <Footer />
-        </ul>
-      </div>
-    </nav>
+        >
+          <LanguageToggle />
+        </div>
+        <Footer />
+      </nav>
+    </>
+    //       <LanguageToggle />
+    //     </div>
+    //     <Footer />
+    //   </div>
+    // </nav>
   );
 }
