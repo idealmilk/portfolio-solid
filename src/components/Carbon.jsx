@@ -4,6 +4,7 @@ import { carbonIntensity, setCarbonIntensity } from '~/root';
 import { carbonUsage, setCarbonUsage } from '~/root';
 import { isEnglish, setIsEnglish } from '~/root';
 
+import CarbonGauge from './CarbonGauge';
 import styles from './Carbon.module.css';
 
 export default function Carbon(props) {
@@ -18,14 +19,8 @@ export default function Carbon(props) {
   return (
     <>
       <div class={styles.intensityContainer}>
-        <div class={styles.gauge}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <CarbonGauge />
+
         <Show
           when={isEnglish()}
           fallback={

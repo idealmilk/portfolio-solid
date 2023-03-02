@@ -1,0 +1,74 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.gauge {
+  position: relative;
+  width: 150px;
+  height: 75px;
+  overflow: hidden;
+  transform: translateY(6.2rem);
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 75px 75px 0 0;
+  background: rgba(35, 98, 153, 0.6);
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9rem;
+  height: 9rem;
+  background-color: #2675bb;
+  border-radius: 50%;
+  transform: translate(-4.5rem, -0.9rem);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75px;
+  height: 0.5rem;
+  background-color: #2675bb;
+  border-radius: 4rem 0 0 4rem;
+  transform-origin: 0rem 3.75rem;
+  transition: transform 0.8s ease-in-out;
+}
+
+.tickers {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.tickers span {
+  height: 1rem;
+  width: 3rem;
+  color: black;
+}
+
+.tickers span:first-of-type {
+  transform: translate(4rem, 2rem);
+}
+
+.dial {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000;
+}
