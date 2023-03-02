@@ -84,7 +84,7 @@
 }
 
 .menuToggle input:checked ~ ul {
-  transform: translate(-92.5vw, -3rem);
+  transform: translate(-90vw, -3rem);
   opacity: 1;
 }
 
@@ -95,21 +95,19 @@
 }
 
 @media screen and (max-width: 480px) {
-  .menuToggle ul {
-    transform: translate(90vw, -3rem);
-  }
-
   .menuToggle input:checked ~ ul {
-    transform: translate(-90vw, -3rem);
+    transform: translate(-86vw, -3rem);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menuToggle input:checked ~ ul {
+    transform: translate(-83vw, -3rem);
   }
 }
 
 @media screen and (max-width: 320px) {
-  .menuToggle ul {
-    transform: translate(85vw, -3rem);
-  }
-
   .menuToggle input:checked ~ ul {
-    transform: translate(-85vw, -3rem);
+    transform: translate(-80vw, -3rem);
   }
 }
