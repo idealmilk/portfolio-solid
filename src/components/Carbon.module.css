@@ -1,21 +1,23 @@
-.intensityContainer,
-.usageContainer {
+.carbonWrap {
   position: fixed;
-  bottom: 1.6rem;
-  right: 1.6rem;
   display: flex;
   justify-content: space-between;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 1400px;
+  max-width: 97%;
+  margin: 0 auto 1.6rem;
 }
 
-.intensityContainer {
-  left: 1.6rem;
-  right: revert;
-  display: block;
+.usageContainer button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 @media screen and (max-width: 480px) {
-  .intensityContainer,
-  .usageContainer {
+  .carbonWrap {
     display: none;
   }
 }

@@ -17,7 +17,7 @@ export default function Carbon(props) {
   };
 
   return (
-    <>
+    <div class={styles.carbonWrap}>
       <div class={styles.intensityContainer}>
         <CarbonGauge />
 
@@ -40,7 +40,7 @@ export default function Carbon(props) {
           <button>CO2 Used: ~{carbonUsage()}</button>
         </Show>
       </div>
-    </>
+    </div>
   );
 }
 

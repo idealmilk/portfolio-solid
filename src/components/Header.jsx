@@ -6,6 +6,11 @@ import styles from './Header.module.css';
 export default function Header() {
   return (
     <header class={styles.header}>
+      <div class={styles.logoWrap}>
+        <A href='/' end>
+          <img src='/logo.png' alt='' />
+        </A>
+      </div>
       <nav class={styles.nav}>
         <A href='/' end>
           <button>Home</button>
