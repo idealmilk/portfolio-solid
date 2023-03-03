@@ -1,4 +1,4 @@
-import { createSignal, createEffect } from 'solid-js';
+import { createSignal } from 'solid-js';
 import { A } from 'solid-start';
 
 import Footer from './Footer';
@@ -13,6 +13,11 @@ export default function MobileNav() {
 
   return (
     <>
+      <div class={styles.logoWrap}>
+        <A href='/' end>
+          <img src='/logo.png' alt='' />
+        </A>
+      </div>
       <button
         class={`${styles.toggle} ${isActive() ? styles.active : ''}`}
         onClick={toggleNavigation}

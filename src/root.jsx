@@ -1,5 +1,5 @@
 // @refresh reload
-import { Suspense, createSignal, onMount, createEffect } from 'solid-js';
+import { Suspense, createSignal, createEffect } from 'solid-js';
 import {
   Body,
   ErrorBoundary,
@@ -27,7 +27,7 @@ export const [carbonUsage, setCarbonUsage] = createSignal([]);
 export default function Root() {
   const location = useLocation();
 
-  onMount(async () => {
+  createEffect(async () => {
     const now = new Date();
 
     const eightHoursAhead = new Date(

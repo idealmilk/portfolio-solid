@@ -1,3 +1,16 @@
+.logoWrap {
+  position: absolute;
+  display: none;
+  top: 1.6rem;
+  left: 1.6rem;
+  z-index: 1000;
+}
+
+.logoWrap img {
+  width: 4rem;
+  cursor: pointer;
+}
+
 .toggle {
   position: absolute;
   display: none;
@@ -83,7 +96,8 @@
     background: transparent !important;
   }
 
-  .navigation {
+  .navigation,
+  .logoWrap {
     display: block;
     opacity: 1;
   }
