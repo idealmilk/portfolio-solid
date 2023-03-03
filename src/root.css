@@ -198,6 +198,10 @@ img {
   .inner-text-wrap {
     margin-top: 10rem !important;
   }
+
+  .inner-wrap {
+    margin-top: 6rem !important;
+  }
 }
 
 @media (max-width: 320px) {

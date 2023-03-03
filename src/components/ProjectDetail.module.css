@@ -59,3 +59,22 @@
     padding-left: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .projectDetailTitle {
+    display: block;
+    padding-bottom: 2rem;
+    margin: 2rem 0;
+  }
+
+  .projectDetailTitle h1 {
+    font-size: 9vw;
+    margin: 0 0 1.4rem 0;
+  }
+
+  .projectDetailTitle a {
+    position: relative;
+    bottom: revert;
+    right: revert;
+  }
+}
