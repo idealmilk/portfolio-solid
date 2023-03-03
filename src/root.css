@@ -194,6 +194,12 @@ img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .inner-text-wrap {
+    margin-top: 10rem !important;
+  }
+}
+
 @media (max-width: 320px) {
   button {
     padding: 0.8rem 1.4rem;
